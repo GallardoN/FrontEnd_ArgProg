@@ -1,5 +1,5 @@
 .row{
-    padding: 20px;
+    padding: 50px;
 }
 div{
     background-color: #a1b5cb;
@@ -8,14 +8,18 @@ div{
 
 #nombre{
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 0px;
     margin-left: -20px;
 }
 
 #titulo{
     font-weight:600;
     margin-top: 5%;
-    margin-left: -20px;
+    margin-left: -10px;
+}
+
+#acerca{
+    margin-top: -10px;
 }
 
 @media(min-width: 576px){
