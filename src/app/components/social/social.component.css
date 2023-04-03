@@ -3,3 +3,8 @@ img{
     color:black;
     margin: 2px;
 }
+
+#gmail{
+    background-color: azure;
+    border-radius: 100%;
+}
