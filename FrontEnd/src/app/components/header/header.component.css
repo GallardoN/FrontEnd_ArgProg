@@ -1,5 +1,9 @@
+.row{
+    background: linear-gradient(to right, rgb(66, 78, 255), rgb(95, 154, 255))
+}
+
 div{
-    background-color:#8ca7c4;
+    background-color:nule;
     size: 10px;
 }
 

@@ -5,6 +5,7 @@
 
 #HSS{
     border-top: 5px solid black;
+    border-bottom: 5px solid black;
     margin-left: 1px;
     background-image: url("../../../assets/fondoCircles.avif");
     background-repeat: no-repeat;

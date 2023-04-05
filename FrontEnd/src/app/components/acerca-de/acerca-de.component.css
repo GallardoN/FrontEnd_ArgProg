@@ -1,8 +1,9 @@
 .row{
     padding: 50px;
+    background: linear-gradient(to right, rgb(66, 78, 255), rgb(95, 154, 255))
 }
 div{
-    background-color: #8ca7c4;
+    background-color: nule;
     text-align: center;
 }
 
@@ -27,7 +28,7 @@ div{
         position: absolute;
         width: 14%;
         border-radius: 45%;
-        box-shadow: 5px 5px 5px grey;
+        box-shadow: 5px 5px 15px black;
         left: 2%;
         top: 615px;
     }
