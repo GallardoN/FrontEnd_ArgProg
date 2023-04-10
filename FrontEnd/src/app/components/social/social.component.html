@@ -12,6 +12,8 @@
 
     <a href="https://github.com/GallardoN" target="_blank"><img src="../../../assets/GitHub.png" id="github"></a>
 
-    <a type="button" class="btn btn-outline-light" href="/login" id="ingresar"><h5>INGRESAR</h5></a>
+    <a type="button" class="btn btn-outline-light" (click)="login()" id="ingresar" *ngIf="!isLogged"><h5>INGRESAR</h5></a>
+
+    <a type="button" class="btn btn-outline-light" (click)="onLogOut()" id="ingresar" *ngIf="isLogged"><h5>CERRAR SESION</h5></a>
 
 </div>
