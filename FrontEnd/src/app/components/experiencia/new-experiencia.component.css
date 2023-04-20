@@ -1,0 +1,42 @@
+#formulario{
+    background: rgb(28, 12, 39);
+    padding-bottom: 15px;
+    color: rgb(187, 182, 255);
+    box-shadow: 20px 20px 5px black;
+}
+
+#fondo{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(126, 126, 126));
+    padding-bottom: 50px;
+}
+
+#nombreEm{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+#descripcionEm{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#agregar{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nombreE{
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Century Gothic";
+}
+
+#descripcionE{
+    margin-top: 10px;
+}
+
+h6{
+   font-family: "Arial Black";
+}
