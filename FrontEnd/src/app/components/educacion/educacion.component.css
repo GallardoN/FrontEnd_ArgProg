@@ -19,3 +19,34 @@ h1, h3{
 #educacion{
     text-decoration: underline rgb(1, 1, 100);
 }
+
+#agregar{
+    margin-bottom: 10px;
+}
+
+table{
+    background-color:rgb(1, 96, 185);
+    border-collapse: collapse;
+    border: solid black 3px;
+}
+
+#nombre{
+    border-collapse: collapse;
+    border: solid black 3px;
+    height: auto;
+    width: 330px;
+}
+
+
+#descripcion{
+    border-collapse: collapse;
+    border: solid black 3px;
+    border-right: none;
+    height: auto;
+}
+
+#editar, #borrar{
+    border-bottom: solid black 3px;
+    width: 20px;
+
+}
