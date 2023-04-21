@@ -19,7 +19,7 @@ export class TokenService {
   window.sessionStorage.setItem(TOKEN_KEY, token);
   }
 
-public getToken(token: string){
+public getToken():string {
   return sessionStorage.getItem(TOKEN_KEY)!;
 }
 
@@ -28,7 +28,7 @@ public setUsername(username: string): void {
   window.sessionStorage.setItem(USERNAME_KEY, username);
 }
 
-public getUsername(token: string){
+public getUsername():string {
   return sessionStorage.getItem(USERNAME_KEY)!;
 }
 
