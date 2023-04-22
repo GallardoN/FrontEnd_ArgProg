@@ -19,7 +19,9 @@ h1, h3{
     text-decoration: underline rgb(1, 1, 100);
 }
 
-
+button{
+    box-shadow: 3px 3px 5px black;
+}
 
 #agregar{
     margin-bottom: 10px;
