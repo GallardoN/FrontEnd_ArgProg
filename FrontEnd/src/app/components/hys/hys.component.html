@@ -4,7 +4,7 @@
         <h1 class="text-center" id="tituloHSS">Hard & Soft Skills</h1>
 
         <div class="col-lg-2">
-            <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged" id="agregar">
+            <button type="button" class="btn btn-dark" routerLink="/newskill" *ngIf="isLogged" id="agregar">
                 Nueva Skill
             </button>
         </div>
@@ -15,7 +15,7 @@
             [showUnits]="true" 
             [imageSrc]="''" 
             [title]="(skill.nombre)"
-            [titleColor]="'#212F3C'"
+            [titleColor]="'white'"
             [showTitle]="true" 
             [showImage]="false"
             [imageHeight]="100" 
