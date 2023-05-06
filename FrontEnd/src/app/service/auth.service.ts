@@ -9,7 +9,8 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://backendgna.onrender.com/auth/';
+  //authURL = 'https://localhost:8080/auth/'
 
   constructor(private httpClient: HttpClient) { }
 

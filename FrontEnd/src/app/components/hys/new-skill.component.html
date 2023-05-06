@@ -1,0 +1,52 @@
+<div class=row id="fondo">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class=row id="formulario">
+                            <div>
+
+                                <a href="../../../index.html">
+                                
+                                    <img src="../../../assets/retroceder1.png" id="retroceso">
+                                
+                                </a>
+
+                                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                                    <div class="form-group" id="nombreS">
+                                        <label for="nombre">
+                                            <h3>Nueva Skill</h3>
+                                        </label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            [(ngModel)]="nombre" required>
+                                    </div>
+
+                                    <div class="form-group" id="porcentajeS">
+                                        <label for="porcentaje">
+                                            <h3>Porcentaje</h3>
+                                        </label>
+                                        <textarea rows="4" type="text" class="form-control" id="porcentaje"
+                                            name="porcentaje" [(ngModel)]="porcentaje" required>
+                                        </textarea>
+                                    </div>
+
+                                    
+
+
+                                    <div id="agregar">
+
+                                       
+
+
+                                        <button class="btn btn-warning">
+                                            <h6>Agregar Skill</h6>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

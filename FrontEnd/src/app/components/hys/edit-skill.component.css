@@ -1,0 +1,46 @@
+#formulario{
+    background: rgb(46, 28, 0);
+    padding-bottom: 15px;
+    color: rgb(255, 182, 182);
+    box-shadow: 20px 20px 5px black;
+}
+
+#fondo{
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(126, 126, 126));
+    padding-bottom: 50px;
+}
+
+#nombreS{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+#porcentaje{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#actualizar{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nombre{
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Century Gothic";
+}
+
+#porcentaje2{
+    margin-top: 10px;
+}
+
+h6{
+   font-family: "Arial Black";
+}
+
+#retroceso{
+    width: 25px;
+}

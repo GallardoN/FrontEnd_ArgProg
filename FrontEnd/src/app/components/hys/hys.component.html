@@ -1,130 +1,47 @@
 <div class="row">
     <div class="row" id="HSS">
-    <h1 class="text-center" id="tituloHSS">Hard & Soft Skills</h1>
-    <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circlehtml">
-        <circle-progress 
-        [percent]="85"
-        [showUnits]="true"
-        [imageSrc]="'../assets/html.png'"
-        [showImage]="true"
-        [imageHeight]="100"
-        [imageWidth]="100"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'green'"
-        [innerStrokeColor]="'orange'"
-        [animation]="true"
-        [animationDuration]="600"
-   ></circle-progress>
 
-   <h2>HTML</h2>
+        <h1 class="text-center" id="tituloHSS">Hard & Soft Skills</h1>
 
-    </div>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged" id="agregar">
+                Nueva Skill
+            </button>
+        </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circleGit">
-        <circle-progress
-        [percent]="90"
-        [showUnits]="false"
-        [imageSrc]="'../assets/git.png'"
-        [showImage]="true"
-        [imageHeight]="100"
-        [imageWidth]="100"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'red'"
-        [innerStrokeColor]="'magenta'"
-        [animation]="true"
-        [animationDuration]="600"
-   ></circle-progress>
+        <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circle" *ngFor="let skill of skill">
+            <circle-progress 
+            [percent]="(skill.porcentaje)" 
+            [showUnits]="true" 
+            [imageSrc]="''" 
+            [showImage]="false"
+            [imageHeight]="100" 
+            [imageWidth]="100" 
+            [radius]="100" 
+            [outerStrokeWidth]="16" 
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'darkred'" 
+            [innerStrokeColor]="'black'" 
+            [animation]="true"
+            [animationDuration]="600">
+            </circle-progress>
 
-   <h2>GitHub</h2>
+            <h2>{{skill.nombre}}></h2>
 
-    </div>
+            <div>
+                <td *ngIf="isLogged" id="editar">
+                <button class="btn btn-warning" routerLink="/editskill/{{skill.id}}">
+                    <i class="bi bi-pencil-square"></i></button>
+            </td>
 
-    <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circleJS">
-        <circle-progress
-        [percent]="70"
-        [showUnits]="false"
-        [imageSrc]="'../assets/js.png'"
-        [showImage]="true"
-        [imageHeight]="100"
-        [imageWidth]="100"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'darkviolet'"
-        [innerStrokeColor]="'purple'"
-        [animation]="true"
-        [animationDuration]="600"
-   ></circle-progress>
+            <td *ngIf="isLogged" id="borrar">
+                <button class="btn btn-danger" (click)="delete(skill.id)">
+                    <i class="bi bi-trash3-fill"></i></button>
+            </td>
+            </div>
+            
 
-<h2>JavaScript</h2>
+        </div>
 
     </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circleCSS">
-        <circle-progress
-        [percent]="95"
-        [showUnits]="false"
-        [imageSrc]="'../assets/CSS.png'"
-        [showImage]="true"
-        [imageHeight]="100"
-        [imageWidth]="100"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'white'"
-        [innerStrokeColor]="'darkblue'"
-        [animation]="true"
-        [animationDuration]="600"
-   ></circle-progress>
-
-<h2>CSS</h2>
-
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circleEquipo">
-        <circle-progress
-        [percent]="70"
-        [showUnits]="false"
-        [imageSrc]="'../assets/trabajoEnEquipo.ico'"
-        [showImage]="true"
-        [imageHeight]="100"
-        [imageWidth]="100"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'skyblue'"
-        [innerStrokeColor]="'black'"
-        [animation]="true"
-        [animationDuration]="600"
-   ></circle-progress>
-
-<h2>Trabajo en equipo</h2>
-
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-ig-4" id="circleIngles">
-        <circle-progress
-        [percent]="55"
-        [showUnits]="false"
-        [imageSrc]="'../assets/ingles.png'"
-        [showImage]="true"
-        [imageHeight]="100"
-        [imageWidth]="100"
-        [radius]="100"
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-   ></circle-progress>
-
-<h2>Inglés</h2>
-
-     </div>
-   </div> 
 </div>

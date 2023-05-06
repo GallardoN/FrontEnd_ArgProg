@@ -24,13 +24,10 @@ h2{
 }
 
 
-#circlehtml, #circleGit, #circleJS{
-    display: inline;
+#circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 } 
 
-#circleCSS, #circleEquipo, #circleIngles{
-    display: inline;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
 
