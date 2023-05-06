@@ -14,6 +14,9 @@
             [percent]="(skill.porcentaje)" 
             [showUnits]="true" 
             [imageSrc]="''" 
+            [title]="(skill.nombre)"
+            [titleColor]="'#212F3C'"
+            [showTitle]="true" 
             [showImage]="false"
             [imageHeight]="100" 
             [imageWidth]="100" 
@@ -25,8 +28,6 @@
             [animation]="true"
             [animationDuration]="600">
             </circle-progress>
-
-            <h2>{{skill.nombre}}></h2>
 
             <div>
                 <td *ngIf="isLogged" id="editar">
