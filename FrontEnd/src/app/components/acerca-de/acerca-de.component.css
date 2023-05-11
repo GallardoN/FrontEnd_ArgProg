@@ -37,7 +37,17 @@ div{
     #fotoDePerfil{
         width: 35%;
         border-radius: 45%;
-        box-shadow: 5px 5px 5px  gray;
+        box-shadow: 5px 5px 5px  black;
         left: 30%;
+        margin-bottom: 15px;
     }
+
+    #titulo{
+        margin-bottom: 30px;
+    }
+}
+
+#agregar{
+    margin-top: -20px ;
+    margin-bottom: 20px;
 }

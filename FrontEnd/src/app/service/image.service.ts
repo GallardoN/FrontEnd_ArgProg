@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Storage, getDownloadURL, list, ref, uploadBytes} from '@angular/fire/storage';
 
+/* Intenté actualizar imagenes, pero no tengo suficiente tiempo como para corregir los errores que causa*/
+
 @Injectable({
   providedIn: 'root'
 })

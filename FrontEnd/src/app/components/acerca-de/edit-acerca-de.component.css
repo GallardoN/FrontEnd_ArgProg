@@ -20,11 +20,6 @@
     margin-top: 15px;
 }
 
-#imgP{
-    text-align: center;
-    margin-top: 15px;
-}
-
 #descripcionP{
     text-align: center;
     margin-top: 50px;
@@ -35,7 +30,7 @@
     margin-top: 50px;
 }
 
-#nombre, #apellido, #img{
+#nombre, #apellido{
     margin-top: 10px;
     text-align: center;
     font-size: x-large;
