@@ -1,47 +1,36 @@
 <div class="row">
-    <h1>Proyectos realizados</h1>
-    <div class="container">
-        
-         <div class="col-sm-12 col-md-3 col-lg-3 offset-1" id="imagen1">
-            <img src="" class="img-fluid img-proyecto">
-        </div>
-        
-        <div class="col-sm-12 col-md-7 col-lg-7 offset-md-1 offset-lg-1" id="proyecto1">
-            <h1>Proyecto 1</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsa quae dolore nam recusandae rem consectetur nobis amet architecto asperiores ab cum corporis error voluptates voluptatem dignissimos vel eligendi magnam!</p>
-        </div>
-       
+    <h1 id="project">Proyectos</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/newproyect" *ngIf="isLogged" id="agregar">
+            Agregar proyecto
+        </button>
     </div>
 
-    <div class="container">
-        
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-1" id="imagen2">
-           <img src="" class="img-fluid img-proyecto">
-       </div>
-       
-       <div class="col-sm-12 col-md-7 col-lg-7 offset-md-1 offset-lg-1" id="proyecto2">
-           <h1>Proyecto 2</h1>
-           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsa quae dolore nam recusandae rem consectetur nobis amet architecto asperiores ab cum corporis error voluptates voluptatem dignissimos vel eligendi magnam!</p>
-       </div>
-       </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyectos of proyectos">
+                    <td id="nombre">
+                        <h3>{{Proyectos.nombre}}</h3>
+                    </td>
 
-       <div class="container">
-        
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-1" id="imagen3">
-           <img src="" class="img-fluid img-proyecto">
-       </div>
-       
-       <div class="col-sm-12 col-md-7 col-lg-7 offset-md-1 offset-lg-1" id="proyecto3">
-           <h1>Proyecto 3</h1>
-           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, ipsa quae dolore nam recusandae rem consectetur nobis amet architecto asperiores ab cum corporis error voluptates voluptatem dignissimos vel eligendi magnam!</p>
-       </div>
-      
-      
-   </div>
+                    <td id="descripcion">
+                        <h5>{{Proyectos.link}}</h5>
+                        <h6>{{Proyectos.descripcion}}</h6>
+                    </td>
 
+                    <td *ngIf="isLogged" id="editar">
+                        <button class="btn btn-warning" routerLink="/editproyect/{{Proyectos.id}}">
+                            <i class="bi bi-pencil-square"></i></button>
+                    </td>
 
-
-
-
-
+                    <td *ngIf="isLogged" id="borrar">
+                        <button class="btn btn-danger" (click)="delete(Proyectos.id)">
+                            <i class="bi bi-trash3-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

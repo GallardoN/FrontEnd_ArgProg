@@ -1,0 +1,54 @@
+<div class=row id="fondo">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="container" *ngIf="proyectos">
+                        <div class="row" id="formulario">
+                            <div>
+
+                                <a href="../../../index.html" class="btn">
+                                    <img src="../../../assets/retroceder4.png" id="retroceso">
+                                </a>
+
+                                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                    <div class="form-group" id="nombreP">
+                                        <label for="nombre">
+                                            <h3>Nombre del proyecto</h3>
+                                        </label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            [(ngModel)]="proyectos.nombre" required>
+                                    </div>
+
+                                    <div class="form-group" id="linkP">
+                                        <label for="link">
+                                            <h3>Link del proyecto</h3>
+                                        </label>
+                                        <input type="text" class="form-control" id="link" name="link"
+                                            [(ngModel)]="proyectos.link" required>
+                                    </div>
+
+                                    <div class="form-group" id="descripcionP">
+                                        <label for="descripcion">
+                                            <h3>Descripción del proyecto</h3>
+                                        </label>
+                                        <textarea rows="4" type="text" class="form-control" id="descripcion"
+                                            name="descripcion" [(ngModel)]="proyectos.descripcion" required>
+                                        </textarea>
+                                    </div>
+
+                                    <div id="actualizar">
+                                        <button class="btn btn-warning">
+                                            <h6>Actualizar</h6>
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -26,6 +26,8 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { NewproyectComponent } from './components/proyectos/newproyect.component';
+import { EditproyectComponent } from './components/proyectos/editproyect.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
     EditSkillComponent,
     NewSkillComponent,
     EditAcercaDeComponent,
+    NewproyectComponent,
+    EditproyectComponent,
   ],
   imports: [
     BrowserModule,

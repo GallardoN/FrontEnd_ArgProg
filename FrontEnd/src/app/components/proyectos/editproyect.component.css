@@ -1,0 +1,46 @@
+#formulario{
+    background: rgb(11, 46, 0);
+    padding-bottom: 15px;
+    color: rgb(197, 255, 182);
+    box-shadow: 20px 20px 5px black;
+}
+
+#fondo{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(126, 126, 126));
+    padding-bottom: 50px;
+}
+
+#nombreP{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+#descripcionP{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#actualizar{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nombre{
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Century Gothic";
+}
+
+#descripcion{
+    margin-top: 10px;
+}
+
+h6{
+   font-family: "Arial Black";
+}
+
+#retroceso{
+    width: 25px;
+}

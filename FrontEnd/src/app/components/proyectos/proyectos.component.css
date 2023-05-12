@@ -1,37 +1,55 @@
 .row{
     padding: 20px;
-    padding-top: 50px;
-    background: linear-gradient(to right, rgb(66, 78, 255), rgb(95, 154, 255));
+    padding-bottom: 50px;
+    background: linear-gradient(to right, rgb(66, 78, 255), rgb(95, 154, 255))
 }
 
-.container{
-    width: auto;
-    padding-top: 50px;
-    padding-bottom: 20px;
+div{
+    background: nule;
 }
 
- #imagen1, #proyecto1{
-    display: inline-block;
-    text-align: justify;
+h1, h3{
+    display: inline;
 }
 
-#imagen2, #proyecto2{
-    display: inline-block;
-    text-align: justify;
+
+#project{
+    text-decoration: underline rgb(1, 1, 100);
 }
 
-#imagen3, #proyecto3{
-    display: inline-block;
-    text-align: justify;
+button{
+    box-shadow: 3px 3px 5px black;
 }
 
-#imagen1, #imagen2, #imagen3{
-    border: solid 5px black;
-    box-shadow: 10px 10px 30px black;
-    max-width: 200px;
-    max-height: 200px;
+#agregar{
+    margin-bottom: 10px;
 }
 
-.img-proyecto{
-    size: cover;
+table{
+    background-color:rgb(1, 96, 185);
+    border-collapse: collapse;
+    border: solid black 3px;
+}
+
+#nombre{
+    border-collapse: collapse;
+    border: solid black 3px;
+    height: auto;
+    width: 330px;
+}
+
+
+#descripcion{
+    border-collapse: collapse;
+    border: solid black 3px;
+    border-right: none;
+    height: auto;
+}
+
+
+
+#editar, #borrar{
+    border-bottom: solid black 3px;
+    width: 20px;
+
 }
