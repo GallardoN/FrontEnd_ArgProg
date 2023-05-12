@@ -17,17 +17,21 @@
 
                     <td id="descripcion">
                         <h6>{{Educacion.descripcionE}}</h6>
+
+                        <div *ngIf="isLogged" id="editar">
+                            <button class="btn btn-warning" routerLink="/editedu/{{Educacion.id}}">
+                                <i class="bi bi-pencil-square"></i></button>
+                        </div>
+
+                        <div *ngIf="isLogged" id="borrar">
+                            <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                                <i class="bi bi-trash3-fill"></i></button>
+                        </div>
+
+
                     </td>
 
-                    <td *ngIf="isLogged" id="editar">
-                        <button class="btn btn-warning" routerLink="/editedu/{{Educacion.id}}">
-                            <i class="bi bi-pencil-square"></i></button>
-                    </td>
 
-                    <td *ngIf="isLogged" id="borrar">
-                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                            <i class="bi bi-trash3-fill"></i></button>
-                    </td>
                 </tr>
             </tbody>
         </table>
